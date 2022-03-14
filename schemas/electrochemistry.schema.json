@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "provenance": "manual",
+        "schema_version": "4.0.0"
+    },
+    "steps": [
+        {
+            "parser": "electrochem",
+            "import": {
+                "files": ["data/ocv.mpt", "data/gcpl.mpt"],
+                "encoding": "windows-1252"
+            },
+            "parameters": {"filetype": "eclab.mpt"}
+        },
+        {
+            "parser": "electrochem",
+            "import": {
+                "folders": ["data"],
+                "suffix": ".mpr"
+            },
+            "parameters": {"filetype": "eclab.mpr"}
+        }
+    ]
+}

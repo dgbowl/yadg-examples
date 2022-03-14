@@ -1,0 +1,20 @@
+{
+    "metadata": {
+        "provenance": "manual",
+        "schema_version": "4.0.0"
+    },
+    "steps": [
+        {
+            "parser": "chromtrace",
+            "import": {
+                "folders": ["data/agilentcsv/"],
+                "prefix": "2019"
+                
+            },
+            "parameters": {
+                "tracetype": "ezchrom.asc",
+                "calfile": "calibrations/gccal.json"
+            }
+        }
+    ]
+}

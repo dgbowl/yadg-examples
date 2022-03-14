@@ -1,0 +1,9 @@
+name: yadg-usage
+channels:
+  - defaults
+dependencies:
+  - python
+  - ipykernel
+  - pip
+  - pip:
+    - yadg==4.0.0

@@ -1,0 +1,15 @@
+{
+    "metadata": {
+        "provenance": "manual",
+        "schema_version": "4.0.0"
+    },
+    "steps": [
+        {
+            "parser": "chromtrace",
+            "import": {
+                "folders": ["data/fusion/"]
+            },
+            "parameters": {"tracetype": "fusion.json"}
+        }
+    ]
+}

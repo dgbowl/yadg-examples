@@ -7,7 +7,7 @@ step_defaults:
 steps:
   - parser: electrochem
     input:
-        folders: ["process/data"]
+        folders: ["."]
         suffix: "mpr"
         contains: "LSV"
     extractor:
@@ -15,7 +15,8 @@ steps:
     tag: LSV
   - parser: chromdata
     input:
-        files: ["process/data/CuDura05_03.zip"]
+        folders: ["."]
+        suffix: "zip"
     extractor:
         filetype: "fusion.zip"
     tag: "GC"

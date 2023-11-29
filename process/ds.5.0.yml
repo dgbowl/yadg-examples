@@ -1,0 +1,21 @@
+metadata:
+    provenance:
+        type: manual
+    version: "5.0"
+step_defaults:
+    timezone: Europe/Berlin
+steps:
+  - parser: electrochem
+    input:
+        folders: ["process/data"]
+        suffix: "mpr"
+        contains: "LSV"
+    extractor:
+      filetype: "eclab.mpr"
+    tag: LSV
+  - parser: chromdata
+    input:
+        files: ["process/data/CuDura05_03.zip"]
+    extractor:
+        filetype: "fusion.zip"
+    tag: "GC"
